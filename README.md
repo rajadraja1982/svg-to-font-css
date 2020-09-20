@@ -8,6 +8,8 @@ Create a font file by svg file. and used in css for custome font file.
 ```
 npm install // to install the npm dependance package
 npm run start // to convert the svg to font
+npm run sass // to convert scss to css
+npm run convert // generate font file and convert sass and scss
 ```
 
 ### SVG place path: 
