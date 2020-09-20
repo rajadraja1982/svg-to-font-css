@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "start": "gulp icon2font",
-    "sass": "node-sass assets\\scss\\_icons.scss assets\\css\\icon.css"
+    "sass": "node-sass assets\\scss\\_icons.scss assets\\css\\icon.css",
+    "convert" : "npm run start && npm run sass"
   },
   "private": true,
   "dependencies": {
