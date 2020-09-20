@@ -2,10 +2,13 @@
   "name": "frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "gulp icon2font"
+    "start": "gulp icon2font",
+    "sass": "node-sass assets\\scss\\_icons.scss assets\\css\\icon.css"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-iconfont": "^10.0.3",
