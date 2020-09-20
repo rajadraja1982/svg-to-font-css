@@ -1,0 +1,468 @@
+@font-face {
+	font-family: "icons";
+	src: url('../fonts/icons.eot');
+	src: url('../fonts/icons.eot?#iefix') format('eot'),
+		url('../fonts/icons.woff') format('woff'),
+		url('../fonts/icons.ttf') format('truetype');
+}
+
+@mixin icon-styles {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == add {
+		$char: "\E001";
+	}
+	@if $filename == all_data {
+		$char: "\E002";
+	}
+	@if $filename == archive {
+		$char: "\E003";
+	}
+	@if $filename == ast {
+		$char: "\E004";
+	}
+	@if $filename == at {
+		$char: "\E005";
+	}
+	@if $filename == auto_number {
+		$char: "\E006";
+	}
+	@if $filename == benefit {
+		$char: "\E007";
+	}
+	@if $filename == calender {
+		$char: "\E008";
+	}
+	@if $filename == cmn {
+		$char: "\E009";
+	}
+	@if $filename == csv {
+		$char: "\E00A";
+	}
+	@if $filename == currency {
+		$char: "\E00B";
+	}
+	@if $filename == date {
+		$char: "\E00C";
+	}
+	@if $filename == date_and_time {
+		$char: "\E00D";
+	}
+	@if $filename == decimal {
+		$char: "\E00E";
+	}
+	@if $filename == delete {
+		$char: "\E00F";
+	}
+	@if $filename == disabled {
+		$char: "\E010";
+	}
+	@if $filename == dm {
+		$char: "\E011";
+	}
+	@if $filename == done {
+		$char: "\E012";
+	}
+	@if $filename == dropdown {
+		$char: "\E013";
+	}
+	@if $filename == edit {
+		$char: "\E014";
+	}
+	@if $filename == em {
+		$char: "\E015";
+	}
+	@if $filename == email {
+		$char: "\E016";
+	}
+	@if $filename == error {
+		$char: "\E017";
+	}
+	@if $filename == ess {
+		$char: "\E018";
+	}
+	@if $filename == file {
+		$char: "\E019";
+	}
+	@if $filename == filter {
+		$char: "\E01A";
+	}
+	@if $filename == heading {
+		$char: "\E01B";
+	}
+	@if $filename == html {
+		$char: "\E01C";
+	}
+	@if $filename == info {
+		$char: "\E01D";
+	}
+	@if $filename == jpg {
+		$char: "\E01E";
+	}
+	@if $filename == link {
+		$char: "\E01F";
+	}
+	@if $filename == lms {
+		$char: "\E020";
+	}
+	@if $filename == more {
+		$char: "\E021";
+	}
+	@if $filename == more_options {
+		$char: "\E022";
+	}
+	@if $filename == more_utilities {
+		$char: "\E023";
+	}
+	@if $filename == mp3 {
+		$char: "\E024";
+	}
+	@if $filename == mp4 {
+		$char: "\E025";
+	}
+	@if $filename == multiple_choice {
+		$char: "\E026";
+	}
+	@if $filename == my_data {
+		$char: "\E027";
+	}
+	@if $filename == my_subordinate_data {
+		$char: "\E028";
+	}
+	@if $filename == next {
+		$char: "\E029";
+	}
+	@if $filename == number {
+		$char: "\E02A";
+	}
+	@if $filename == other_file {
+		$char: "\E02B";
+	}
+	@if $filename == paragraph {
+		$char: "\E02C";
+	}
+	@if $filename == pdf {
+		$char: "\E02D";
+	}
+	@if $filename == phone {
+		$char: "\E02E";
+	}
+	@if $filename == pm {
+		$char: "\E02F";
+	}
+	@if $filename == pms {
+		$char: "\E030";
+	}
+	@if $filename == png {
+		$char: "\E031";
+	}
+	@if $filename == ppt {
+		$char: "\E032";
+	}
+	@if $filename == previous {
+		$char: "\E033";
+	}
+	@if $filename == refresh {
+		$char: "\E034";
+	}
+	@if $filename == remove {
+		$char: "\E035";
+	}
+	@if $filename == reset_successful {
+		$char: "\E036";
+	}
+	@if $filename == rm {
+		$char: "\E037";
+	}
+	@if $filename == search {
+		$char: "\E038";
+	}
+	@if $filename == single_choice {
+		$char: "\E039";
+	}
+	@if $filename == sort_down {
+		$char: "\E03A";
+	}
+	@if $filename == sort_up {
+		$char: "\E03B";
+	}
+	@if $filename == string {
+		$char: "\E03C";
+	}
+	@if $filename == subform {
+		$char: "\E03D";
+	}
+	@if $filename == subordinate_data {
+		$char: "\E03E";
+	}
+	@if $filename == suy {
+		$char: "\E03F";
+	}
+	@if $filename == time {
+		$char: "\E040";
+	}
+	@if $filename == tm {
+		$char: "\E041";
+	}
+	@if $filename == trash {
+		$char: "\E042";
+	}
+	@if $filename == txt {
+		$char: "\E043";
+	}
+	@if $filename == upload {
+		$char: "\E044";
+	}
+	@if $filename == url {
+		$char: "\E045";
+	}
+	@if $filename == xls {
+		$char: "\E046";
+	}
+	@if $filename == zip {
+		$char: "\E047";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-add {
+	@include icon(add);
+}
+.icon-all_data {
+	@include icon(all_data);
+}
+.icon-archive {
+	@include icon(archive);
+}
+.icon-ast {
+	@include icon(ast);
+}
+.icon-at {
+	@include icon(at);
+}
+.icon-auto_number {
+	@include icon(auto_number);
+}
+.icon-benefit {
+	@include icon(benefit);
+}
+.icon-calender {
+	@include icon(calender);
+}
+.icon-cmn {
+	@include icon(cmn);
+}
+.icon-csv {
+	@include icon(csv);
+}
+.icon-currency {
+	@include icon(currency);
+}
+.icon-date {
+	@include icon(date);
+}
+.icon-date_and_time {
+	@include icon(date_and_time);
+}
+.icon-decimal {
+	@include icon(decimal);
+}
+.icon-delete {
+	@include icon(delete);
+}
+.icon-disabled {
+	@include icon(disabled);
+}
+.icon-dm {
+	@include icon(dm);
+}
+.icon-done {
+	@include icon(done);
+}
+.icon-dropdown {
+	@include icon(dropdown);
+}
+.icon-edit {
+	@include icon(edit);
+}
+.icon-em {
+	@include icon(em);
+}
+.icon-email {
+	@include icon(email);
+}
+.icon-error {
+	@include icon(error);
+}
+.icon-ess {
+	@include icon(ess);
+}
+.icon-file {
+	@include icon(file);
+}
+.icon-filter {
+	@include icon(filter);
+}
+.icon-heading {
+	@include icon(heading);
+}
+.icon-html {
+	@include icon(html);
+}
+.icon-info {
+	@include icon(info);
+}
+.icon-jpg {
+	@include icon(jpg);
+}
+.icon-link {
+	@include icon(link);
+}
+.icon-lms {
+	@include icon(lms);
+}
+.icon-more {
+	@include icon(more);
+}
+.icon-more_options {
+	@include icon(more_options);
+}
+.icon-more_utilities {
+	@include icon(more_utilities);
+}
+.icon-mp3 {
+	@include icon(mp3);
+}
+.icon-mp4 {
+	@include icon(mp4);
+}
+.icon-multiple_choice {
+	@include icon(multiple_choice);
+}
+.icon-my_data {
+	@include icon(my_data);
+}
+.icon-my_subordinate_data {
+	@include icon(my_subordinate_data);
+}
+.icon-next {
+	@include icon(next);
+}
+.icon-number {
+	@include icon(number);
+}
+.icon-other_file {
+	@include icon(other_file);
+}
+.icon-paragraph {
+	@include icon(paragraph);
+}
+.icon-pdf {
+	@include icon(pdf);
+}
+.icon-phone {
+	@include icon(phone);
+}
+.icon-pm {
+	@include icon(pm);
+}
+.icon-pms {
+	@include icon(pms);
+}
+.icon-png {
+	@include icon(png);
+}
+.icon-ppt {
+	@include icon(ppt);
+}
+.icon-previous {
+	@include icon(previous);
+}
+.icon-refresh {
+	@include icon(refresh);
+}
+.icon-remove {
+	@include icon(remove);
+}
+.icon-reset_successful {
+	@include icon(reset_successful);
+}
+.icon-rm {
+	@include icon(rm);
+}
+.icon-search {
+	@include icon(search);
+}
+.icon-single_choice {
+	@include icon(single_choice);
+}
+.icon-sort_down {
+	@include icon(sort_down);
+}
+.icon-sort_up {
+	@include icon(sort_up);
+}
+.icon-string {
+	@include icon(string);
+}
+.icon-subform {
+	@include icon(subform);
+}
+.icon-subordinate_data {
+	@include icon(subordinate_data);
+}
+.icon-suy {
+	@include icon(suy);
+}
+.icon-time {
+	@include icon(time);
+}
+.icon-tm {
+	@include icon(tm);
+}
+.icon-trash {
+	@include icon(trash);
+}
+.icon-txt {
+	@include icon(txt);
+}
+.icon-upload {
+	@include icon(upload);
+}
+.icon-url {
+	@include icon(url);
+}
+.icon-xls {
+	@include icon(xls);
+}
+.icon-zip {
+	@include icon(zip);
+}

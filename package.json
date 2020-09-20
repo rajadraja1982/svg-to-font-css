@@ -1,0 +1,14 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "gulp icon2font"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0"
+  }
+}
